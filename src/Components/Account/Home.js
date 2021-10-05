@@ -2,6 +2,7 @@ import React from "react";
 import "../../Assets/CSS/Account/Home.css";
 import logo from "../../Assets/Images/logo.png";
 import BackgroundImage from "../../Assets/Images/homepage-background.png";
+import HomeCardComponent from "../Reusable/HomeCardComponent";
 
 const Home = () => {
   return (
@@ -14,15 +15,9 @@ const Home = () => {
 
         <div className="text-container text-center">
           <div className="col">
-            <div className="row card-div">
-              <h1 className="home-card">Trusted person log in</h1>
-            </div>
-            <div className="row card-div">
-              <h1 className="home-card">Center Administrator</h1>
-            </div>
-            <div className="row card-div">
-              <h1 className="home-card">Center Registration</h1>
-            </div>
+            <HomeCardComponent title="Trusted person log in" />
+            <HomeCardComponent title="Center Administrator" />
+            <HomeCardComponent title="Center Registration" />
           </div>
         </div>
       </div>
